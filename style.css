@@ -66,11 +66,34 @@ nav a {
 }
 
 .card {
-  width: 30%;
+  width: 29%;
   float: left;
-  margin-right: 30px;
+  padding: 20px;
+  margin-right: 0 auto 40px;
 }
 
 .title {
   font-size: 30px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  nav {
+  display: none;
+  }
+
+  .hamburger-container {
+    display: block;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 1.6;
+  } 
+
+  .card {
+  width: 300px;
+  float: none;
+  margin: 0 auto 40px;
+}
 }
